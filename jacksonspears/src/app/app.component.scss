@@ -1,4 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Bad+Script|Handlee|Satisfy');
+
+@mixin accent-font() {
+    // font-family: 'Bad Script', cursive;
+    //font-family: 'Satisfy', cursive;
+    font-family: 'Abril Fatface', cursive;    
+}
+
 .home-header {
+    @include accent-font();
     position: absolute;
     right: 0;
     font-size: 70px;
