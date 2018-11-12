@@ -1,29 +1,113 @@
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Bad+Script|Handlee|Satisfy');
+@import url('https://fonts.googleapis.com/css?family=Bad+Script|Niramit');
 
-@mixin accent-font() {
-    // font-family: 'Bad Script', cursive;
-    //font-family: 'Satisfy', cursive;
-    font-family: 'Abril Fatface', cursive;    
+$love-navy: #00203F;
+$love-silver: #C0C0C0;
+$love-sangria: #682751;
+$love-aubergine: #320722;
+
+.accent-font {
+    font-family: 'Bad Script', cursive;   
 }
 
-.home-header {
-    @include accent-font();
-    position: absolute;
-    right: 0;
-    font-size: 70px;
-    width: 60%;
-    height: 100vh;
+.regular-font {
+    font-family: 'Niramit', sans-serif;
+}
 
-    h2 {
-        margin-bottom: 0;
+mdb-navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    color: #fff;
+
+    .navbar-brand {
+        color: #fff;
+        font-size: 1.7rem;
+        font-family: 'Bad Script', cursive;  
+        margin-top: 6px;
     }
 }
 
-.home-hero {
-    width: auto;
-    height: 100vh;
+main {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
+    right: 0;
+}
+
+.content {
+    padding-top: 66px;
+    height: 100vh;
+}
+
+.location {
+    margin: 24px 0;
+
+    .anderson-details {
+        h4 {
+            display: inline;
+            margin: 0 6px 0 0;
+        }
+    }
+}
+
+.home-header {
+    position: absolute;
+    right: 0;
+    width: 60%;
+    height: calc(100vh - 66px);
+    padding-top: 50px;
+
+    h1, h2 {
+        color: $love-navy;
+    }
+
+    h2 {
+        margin-bottom: 0;
+    }
+
+    a {
+        &:hover {
+            color: $love-sangria;
+        }
+    }
+
+    form {
+        label {
+            width: 100%;
+        }
+
+        input {
+            border: 0;
+            border-bottom: 2px solid #fff;
+            background-color: transparent;
+            color: #fff;
+            margin-bottom: 12px;
+            width: 100%;
+        }
+
+        textarea {
+            width: 100%;
+        }
+
+        font-size: 16px;
+    }
+}
+
+.rsvp-container {
+    background-color: $love-sangria;
+    padding: 24px;
+    color: #fff;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    width: 90%;
+}
+
+.home-hero {
+    border-right: 12px solid $love-navy;
+    width: auto;
+    height: 100vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-top: 66px;
 }

@@ -1,13 +1,75 @@
-<!-- <div class="btn-group" role="group" aria-label="Basic example">
-    <button type="button" class="btn btn-primary">Left</button>
-    <button type="button" class="btn btn-primary">Middle</button>
-    <button type="button" class="btn btn-primary">Right</button>
-  </div> -->
-  
-  <div style="text-align:center">
-  <img class="home-hero" src="../assets/images/carley-and-todd-4.jpg">
-  <div class="home-header">
-    <h1>Carley + Todd</h1>
-    <h2>01.03.2019</h2>
+<mdb-navbar SideClass="navbar navbar-expand-lg background-sangria loveTextPrimary">
+
+  <!-- Navbar brand -->
+  <mdb-navbar-brand><a class="navbar-brand" href="#">C&T</a></mdb-navbar-brand>
+
+  <!-- Collapsible content -->
+  <links>
+
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+          <!-- <li class="nav-item active">
+              <a class="nav-link waves-light" mdbWavesEffect>Home<span class="sr-only">(current)</span></a>
+          </li> -->
+          <!-- <li class="nav-item">
+              <a class="nav-link waves-light" mdbWavesEffect>Wedding Details</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link waves-light" mdbWavesEffect>Registry</a>
+          </li> -->
+
+          <!-- Dropdown -->
+          <!-- <li class="nav-item dropdown" dropdown>
+              <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+              Basic dropdown<span class="caret"></span></a>
+              <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary loveBackgroundSecondary loveTextSecondary" role="menu">
+                  <a class="dropdown-item waves-light " mdbWavesEffect href="#">Action</a>
+                  <a class="dropdown-item waves-light" mdbWavesEffect href="#">Another action</a>
+                  <a class="dropdown-item waves-light" mdbWavesEffect href="#">Something else here</a>
+                  <div class="divider dropdown-divider"></div>
+                  <a class="dropdown-item waves-light" mdbWavesEffect href="#">Separated link</a>
+              </div>
+          </li> -->
+
+      </ul>
+  </links>
+  <!-- Collapsible content -->
+</mdb-navbar>
+
+<main class="background-silver">
+  <div class="content row">
+    <div class="col-sm-4 col-12">
+      <img class="home-hero" src="../assets/images/carley-and-todd-4.jpg">
+    </div>
+    <div class="accent-font home-header col-sm-8 col-12">
+      <h1>Carley + Todd</h1>
+      <h2>01 . 03 . 2019</h2>
+      <div class="regular-font location">
+        <div class="anderson-details">
+            <h4 class="accent-font"><a class="color-aubergine" target="_blank" href="https://www.mcmenamins.com/anderson-school">McMenamin's Anderson School</a></h4><h4 class="accent-font">| Bothell, WA</h4>
+        </div>
+        <h6>Details coming soon.</h6>
+      </div>
+
+      <div class="rsvp-container regular-font">
+        <h3 class="accent-font">RSVP</h3>
+        <form class="row">
+          <div class="col-sm-6">           
+              <label>Name</label>
+              <input type="text"/>
+              <br>
+              <label>Email</label>
+              <input type="text"/>
+              <br>
+              <label>How many people are coming with you?</label>
+              <input type="text"/>
+          </div>
+          <div class="col-sm-6">
+              <label>Comments</label>
+              <textarea rows="7"></textarea>
+          </div>
+        </form>
+      </div>
+    </div>
   </div>
-</div>
+</main>

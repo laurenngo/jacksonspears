@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+
+$love-navy: #00203F;
+$love-silver: #C0C0C0;
+$love-sangria: #682751;
+$love-aubergine: #320722;
+
+.background-silver {
+    background-color: $love-silver;
+}
+
+.background-navy {
+    background-color: $love-navy;
+}
+
+.background-sangria {
+    background-color: $love-sangria;
+}
+
+.background-aubergine {
+    background-color: $love-aubergine;
+}
+
+.color-silver {
+    color: $love-silver;
+}
+
+.color-navy {
+    color: $love-navy;
+}
+
+.color-sangria {
+    color: $love-sangria;
+}
+
+.color-aubergine {
+    color: $love-aubergine;
+}
