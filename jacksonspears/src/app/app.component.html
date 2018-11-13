@@ -50,23 +50,26 @@
         </div>
         <h6>Details coming soon.</h6>
       </div>
-
+      
       <div class="rsvp-container regular-font">
         <h3 class="accent-font">RSVP</h3>
-        <form class="row">
+        <form class="row" action="https://formspree.io/jacksonspearsrsvp@gmail.com" method="POST">
           <div class="col-sm-6">           
               <label>Name</label>
-              <input type="text"/>
+              <input type="text" name="name"/>
               <br>
               <label>Email</label>
-              <input type="text"/>
+              <input type="text" name="email"/>
               <br>
               <label>How many people are coming with you?</label>
-              <input type="text"/>
+              <input type="text" name="guests"/>
           </div>
           <div class="col-sm-6">
               <label>Comments</label>
-              <textarea rows="7"></textarea>
+              <textarea rows="7" name="comment"></textarea>
+          </div>
+          <div class="col-sm-12 submitbutton">
+              <input type="submit" value="Send">
           </div>
         </form>
       </div>
